@@ -1,69 +1,57 @@
 export const questions = [
   {
-    question: "How does Instacart delivery and curbside pickup work?",
+    question: "What is an e-waste center?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
-      "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
-      "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
-      "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
+      "An e-waste center is a specialized facility dedicated to the responsible collection, recycling, and disposal of electronic waste.\n" +
+      "These centers play a crucial role in diverting electronic devices such as old computers, smartphones, and TVs from landfills.\n" +
+      " They are equipped with the necessary technology and expertise to handle e-waste safely, \n" +
+      "ensuring that valuable materials are recovered and hazardous substances are disposed of in an environmentally friendly manner.",
   },
   {
-    question: "How much does Instacart cost?",
+    question: "Where can I find the nearest e-waste center?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
-      "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
-      "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
-      "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
+      "Locating the nearest e-waste center is typically as easy as conducting a quick online search or reaching out to your local government or recycling organizations.\n" +
+      "Many e-waste centers provide detailed information on their websites, including their addresses and operating hours.\n" +
+      "Some even offer pickup services, making it even more convenient for individuals and businesses to dispose of their e-waste responsibly. ",
   },
   {
-    question: "Will I pay the same price on Instacart as I would in the store?",
+    question: "What services do e-waste centers offer?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
+      "E-waste centers offer a range of services designed to accommodate the needs of the community.\n" +
       "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
+      " These services often include e-waste drop-off points where individuals can bring their old electronic devices for recycling, \n" +
       "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
-      "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
+      "secure data destruction to protect sensitive information, electronics refurbishment to extend the lifespan of functional items, and even educational programs to raise awareness about the importance of e-waste recycling.",
   },
   {
-    question:
-      "What happens if something is out of stock and I need to give spesific instructions?",
+    question: "Do I have to pay for e-waste drop-off?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
+      "Whether or not you have to pay for e-waste drop-off can vary depending on the specific e-waste center and the items you are disposing of. \n" +
       "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
+      "Some centers offer free drop-off services for most e-waste items, while others may charge a fee for certain items or services, such as secure data destruction.\n" +
       "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
-      "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
+      " It's a good idea to check with the center beforehand to understand their pricing structure.",
   },
   {
-    question: "What happens if there's an issue with my order?",
+    question: "What happens to the e-waste I drop off at a center?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
+      "When you drop off e-waste at a certified e-waste center, it undergoes a carefully managed process.\n " +
       "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
+      "First, the devices are sorted to determine if any items are still functional and can be refurbished for reuse. \n" +
       "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
+      "Then, the non-functional items are disassembled, and the various components, including metals, plastics, and glass, are separated for recycling. \n" +
       "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
+      "Hazardous materials, such as batteries and certain chemicals, are disposed of safely to prevent harm to the environment.",
   },
   {
-    question: "Can I get contactless delivery with Instacart?",
+    question: "Why is proper e-waste management important?",
     answer:
-      "Instacart makes it easy to order from your favorite stores. Shop for items from stores near you, with a selection of more than 500 retailers and trusted local grocers across North America. Then, Instacart will connect you with a personal shopper in your area to shop and deliver your order. Contactless delivery is available with our “Leave at my door” option.\n" +
+      "Proper e-waste management is crucial for several reasons. \n" +
       "\n" +
-      "You can track your order’s progress and communicate with your shopper every step of the way using the Instacart app or website.\n" +
+      "Electronic devices contain hazardous materials, including lead, mercury, and cadmium, which can pose serious environmental and health risks if not handled correctly.\n" +
       "\n" +
-      "Instacart also offers curbside pickup at select retail locations. Simply place your order and choose a pickup time, and a shopper will prepare your order at the store.\n" +
+      "When e-waste is improperly disposed of in landfills or incinerated, these toxins can leach into the soil and water, harming ecosystems and potentially affecting human populations. \n" +
       "\n" +
-      "When you get to the store, use the Instacart app to notify us. Depending on the store, a shopper or store employee will bring the groceries to your car, or you can pick them up at the designated area.",
+      "Additionally, e-waste recycling helps conserve valuable resources by recovering metals like gold, silver, and copper, reducing the need for mining and extraction.",
   },
 ];

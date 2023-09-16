@@ -1,6 +1,6 @@
 export const programs_user = {
-  logo: "https://d2guulkeunn7d8.cloudfront.net/assets/footer/carrot-footer-v3-be31bf38601e4aab043b0f0071b50a024a7e53853a38371ade2822d5aa46875b.svg",
-  slogan: "Get deliveries with Instacart",
+  logo: "logo2.png",
+  slogan: "Get your e-waste recycled with us!",
   arr: [
     {
       title: "Top departments",
@@ -20,12 +20,12 @@ export const programs_user = {
       body: [
         "Alcohol",
         "Alcohol by Location ",
-        "Frozen Food", 
-        "Beverages", 
-        "Organic Grocery", 
-        "Household Essentials", 
-        "Office Supplies", 
-        "Beauty Products"
+        "Frozen Food",
+        "Beverages",
+        "Organic Grocery",
+        "Household Essentials",
+        "Office Supplies",
+        "Beauty Products",
       ],
     },
     {
@@ -39,7 +39,7 @@ export const programs_user = {
         "Instacart Ads",
         "Instacart+",
         "Instacart Connect",
-        "Careers"
+        "Careers",
       ],
     },
     {
@@ -50,7 +50,7 @@ export const programs_user = {
         "Ideas & Guides",
         "Contact",
         "Help",
-        "Shop By Location"
+        "Shop By Location",
       ],
     },
   ],

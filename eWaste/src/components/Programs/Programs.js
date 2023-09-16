@@ -13,9 +13,6 @@ const Programs = ({ programs }) => {
       <div className={`${styles.programsWrapperInner} center`}>
         <div className={`${styles.programsLeft} center`}>
           <div className={`${styles.programsLeftInner} center`}>
-            <div>
-              <img src={programs.logo} alt="logo" />
-            </div>
             <div className={styles.slogan}>{programs.slogan}</div>
           </div>
           <div className={`${styles.programsLeftInner} center`}>

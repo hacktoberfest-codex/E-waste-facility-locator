@@ -1,18 +1,18 @@
 export const growth = [
   {
-    field: "500 million products",
-    description: "available to shop across the catalog",
+    field: "5 million products recycled",
+    description: "available to recycle across India",
   },
   {
-    field: "40,000 stores",
-    description: "from local grocers to chain stores",
+    field: "40,000 recycle centers",
+    description: "from  rural to metro cities",
   },
   {
-    field: "5,500+ cities",
-    description: "served across the U.S. & Canada",
+    field: "5,000+ cities",
+    description: "served across India",
   },
   {
-    field: "Millions of orders",
-    description: "delivered or picked up yearly",
+    field: "Tons of recycles ",
+    description: "delivered or picked up everyday",
   },
 ];
