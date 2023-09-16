@@ -9,6 +9,7 @@ import Growth from "./components/Growth/Growth";
 import Questions from "./components/Questions/Questions";
 import Programs from "./components/Programs/Programs";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import data
 import { programs_shopper } from "./constants/programs_shopper";

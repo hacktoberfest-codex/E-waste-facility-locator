@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import logo2 from "./logo2.png";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Navbar = ({ hamActive, setHamActive }) => {
   const handleClick = () => {
@@ -36,12 +37,6 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <a href="/" className={`${styles.nav} center`}>
               Donation
             </a>
-          </div>
-          <div>
-            <a href="/" className={styles.login}>
-              Log in
-            </a>
-            <button className={styles.signup}>Sign Up</button>
           </div>
         </div>
       </div>
