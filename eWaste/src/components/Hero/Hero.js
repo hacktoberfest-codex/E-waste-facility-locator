@@ -9,10 +9,10 @@ const Hero = () => {
       </select>
       <div className={`${styles.heroInner}`}>
         <h2 className={styles.headerText}>
-          Order groceries for delivery or pickup today
+          Turning E-Waste into a Sustainable Future.
         </h2>
         <div className={styles.slogan}>
-          <p>Whatever you want from local stores, brought right to your door</p>
+          <p>Certified E-Waste Recycling</p>
         </div>
         <div className={styles.inputLocation}>
           <i className="fas fa-map-marker-alt"> </i>
