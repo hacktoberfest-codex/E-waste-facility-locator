@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import logo2 from "./logo2.png";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = ({ hamActive, setHamActive }) => {
   const handleClick = () => {
@@ -37,6 +37,9 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <a href="/" className={`${styles.nav} center`}>
               Donation
             </a>
+          </div>
+          <div>
+            <a href="/">Log in</a>
           </div>
         </div>
       </div>
