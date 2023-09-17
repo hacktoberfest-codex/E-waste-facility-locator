@@ -1,5 +1,5 @@
 {
-  "name": "instacart",
+  "name": "ewastelocator",
   "version": "0.1.0",
   "proxy": "http://localhost:4000",
   "private": true,
