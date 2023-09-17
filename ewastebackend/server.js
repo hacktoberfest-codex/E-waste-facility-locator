@@ -30,38 +30,113 @@ const deviceData = {
   preciousMetals: ["gold", "silver", "lithium", "copper"],
 };
 // deviceModal.create(deviceData);
-app.get("/", (req, res) => {
-  res.send("Server Started Successfully");
+// app.get("/", (req, res) => {
+//   res.send("Server Started Successfully");
+// });
+
+app.get("/devicemodals", (req, res) => {
+  res.json([
+    {
+      deviceType: "Refrigerators ",
+      preciousMetals: ["aluminum", "copper", "iron"],
+    },
+    {
+      deviceType: "Washingmachine",
+      preciousMetals: ["zinc", "gold", "copper", "aluminum"],
+    },
+    {
+      deviceType: "LCD",
+      preciousMetals: ["zinc", "gold", "copper", "aluminum"],
+    },
+    {
+      deviceType: "Computers",
+      preciousMetals: ["zinc", "gold", "copper", "aluminum"],
+    },
+    {
+      deviceType: "Air-Conditioner",
+      preciousMetals: [
+        "palladium",
+        "platinum",
+        "rhodium",
+        "gold",
+        "tungsten",
+        " alloys",
+      ],
+    },
+  ]);
+});
+app.get("/ewastecenters", (req, res) => {
+  res.json([
+    {
+      pincode: 751030,
+      city: "jagamara",
+      ewastecentername: "M/s. Green Waves Environmental Solution",
+    },
+    {
+      pincode: 756019,
+      city: "Armala",
+      ewastecentername: "Veera Waste Management Systems",
+    },
+    {
+      pincode: 756001,
+      city: "Azimabad",
+      ewastecentername: "Binbag Recycling Services Pvt. Ltd",
+    },
+    {
+      pincode: 751007,
+      city: "Saheed Nagar",
+      ewastecentername: "World Scrap Recycling Solutions (P) Ltd",
+    },
+    {
+      pincode: 751022,
+      city: "Acharaya Vihar",
+      ewastecentername: "Greenscape Eco Management Private ltd",
+    },
+  ]);
 });
 app.post("/searchpincode", (req, res) => {
-  console.log(req.body.address);
-});
-app.get("/api",(req,res)=>{
-res.json([
+  const datareceived = {
+    pincode: req.body.pincode,
+  };
+  console.log(datareceived);
+  const datajson = [
     {
-      "pincode": 751030,
-      "city": "jagamara",
-      "ewastecentername": "M/s. Green Waves Environmental Solution"
+      pincode: 751030,
+      city: "jagamara",
+      ewastecentername: "M/s. Green Waves Environmental Solution",
     },
     {
-      "pincode": 756019,
-      "city": "Armala",
-      "ewastecentername": "Veera Waste Management Systems"
+      pincode: 756019,
+      city: "Armala",
+      ewastecentername: "Veera Waste Management Systems",
     },
     {
-      "pincode": 756001,
-      "city": "Azimabad",
-      "ewastecentername": "Binbag Recycling Services Pvt. Ltd"
+      pincode: 756001,
+      city: "Azimabad",
+      ewastecentername: "Binbag Recycling Services Pvt. Ltd",
     },
     {
-      "pincode": 751007,
-      "city": "Saheed Nagar",
-      "ewastecentername": "World Scrap Recycling Solutions (P) Ltd"
+      pincode: 751007,
+      city: "Saheed Nagar",
+      ewastecentername: "World Scrap Recycling Solutions (P) Ltd",
     },
     {
-      "pincode": 751022,
-      "city": "Acharaya Vihar",
-      "ewastecentername": "Greenscape Eco Management Private ltd"
+      pincode: 751022,
+      city: "Acharaya Vihar",
+      ewastecentername: "Greenscape Eco Management Private ltd",
+    },
+  ];
+  for (let i = 0; i < datajson.length; i++) {
+    if (datareceived.pincode == datajson[i].pincode) {
+      res.json(datajson[i]);
+      console.log();
+      res.sendFile(path.join(__dirname, "/index.html"));
+    } else {
+      res.send(
+        "Sorry currently we dont have any E-waste center available at this Pincode"
+      );
     }
-  ])
-})
+  }
+  //   console.log(datareceived.pincode);
+  //   console.log(datajson[2]);
+});
