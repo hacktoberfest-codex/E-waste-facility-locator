@@ -14,11 +14,20 @@ const Hero = () => {
         <div className={styles.slogan}>
           <p>Certified E-Waste Recycling</p>
         </div>
-        <div className={styles.inputLocation}>
-          <i className="fas fa-map-marker-alt"> </i>
-          <input type="text" placeholder="Enter your address" />
-          <i className={`${styles.arrow} fas fa-arrow-right`}></i>
-        </div>
+        <form action="/searchpincode" method="post">
+          <div className={styles.inputLocation}>
+            <i className="fas fa-map-marker-alt"> </i>
+            <input
+              type="text"
+              name="pincode"
+              placeholder="Enter your Pincode"
+            />
+            <i className={`${styles.arrow} fas fa-arrow-right`}>
+            </i>
+              <input type="submit" value="Submit"></input>
+            
+          </div>
+        </form>
       </div>
       <div className={styles.heroImage}>
         <img
