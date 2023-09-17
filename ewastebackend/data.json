@@ -1,0 +1,29 @@
+[
+  {
+    "deviceType": "Refrigerators ",
+    "preciousMetals": ["aluminum", "copper", "iron"]
+  },
+  {
+    "deviceType": "Washingmachine",
+    "preciousMetals": ["zinc", "gold", "copper", "aluminum"]
+  },
+  {
+    "deviceType": "LCD",
+    "preciousMetals": ["zinc", "gold", "copper", "aluminum"]
+  },
+  {
+    "deviceType": "Computers",
+    "preciousMetals": ["zinc", "gold", "copper", "aluminum"]
+  },
+  {
+    "deviceType": "Air-Conditioner",
+    "preciousMetals": [
+      "palladium",
+      "platinum",
+      "rhodium",
+      "gold",
+      "tungsten",
+      " alloys"
+    ]
+  }
+]
