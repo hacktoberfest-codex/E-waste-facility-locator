@@ -33,7 +33,35 @@ const deviceData = {
 // app.get("/", (req, res) => {
 //   res.send("Server Started Successfully");
 // });
-
+const devicemodals = [
+    {
+      "deviceType": "Refrigerators ",
+      "preciousMetals": ["aluminum", "copper", "iron"]
+    },
+    {
+      "deviceType": "Washingmachine",
+      "preciousMetals": ["zinc", "gold", "copper", "aluminum"]
+    },
+    {
+      "deviceType": "LCD",
+      "preciousMetals": ["zinc", "gold", "copper", "aluminum"]
+    },
+    {
+      "deviceType": "Computers",
+      "preciousMetals": ["zinc", "gold", "copper", "aluminum"]
+    },
+    {
+      "deviceType": "Air-Conditioner",
+      "preciousMetals": [
+        "palladium",
+        "platinum",
+        "rhodium",
+        "gold",
+        "tungsten",
+        " alloys"
+      ]
+    }
+  ]
 app.get("/devicemodals", (req, res) => {
   res.json([
     {
@@ -129,14 +157,13 @@ app.post("/searchpincode", (req, res) => {
   for (let i = 0; i < datajson.length; i++) {
     if (datareceived.pincode == datajson[i].pincode) {
       res.json(datajson[i]);
-      console.log();
-      res.sendFile(path.join(__dirname, "/index.html"));
-    } else {
-      res.send(
-        "Sorry currently we dont have any E-waste center available at this Pincode"
-      );
+      res.sendFile(path.join(__dirname, "/successfull.html"))
+      console.log()
     }
   }
+  res.sendFile(path.join(__dirname, "/index.html"));
   //   console.log(datareceived.pincode);
   //   console.log(datajson[2]);
+
+
 });
