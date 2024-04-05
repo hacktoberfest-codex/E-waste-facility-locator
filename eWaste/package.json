@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tomtom-international/web-sdk-maps": "^6.25.0",
     "auth0": "^4.0.1",
     "bootstrap": "^5.2.3",
     "flag-icon-css": "^4.1.7",
