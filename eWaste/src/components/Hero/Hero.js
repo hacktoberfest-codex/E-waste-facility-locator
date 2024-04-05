@@ -3,10 +3,7 @@ import styles from "./Hero.module.css";
 const Hero = () => {
   return (
     <div className={`${styles.heroWrapper} center`}>
-      <select className={styles.dropDown}>
-        <option value="US">US</option>
-        <option value="IN">IN</option>
-      </select>
+    
       <div className={`${styles.heroInner}`}>
         <h2 className={styles.headerText}>
           Turning E-Waste into a Sustainable Future.
@@ -22,10 +19,8 @@ const Hero = () => {
               name="pincode"
               placeholder="Enter your Pincode"
             />
-            <i className={`${styles.arrow} fas fa-arrow-right`}>
-            </i>
-              <input type="submit" value="Submit"></input>
-            
+            <i className={`${styles.arrow} fas fa-arrow-right`}></i>
+            <input type="submit" value="Submit"></input>
           </div>
         </form>
       </div>

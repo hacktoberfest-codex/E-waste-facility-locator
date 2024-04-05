@@ -9,7 +9,7 @@ import Growth from "./components/Growth/Growth";
 import Questions from "./components/Questions/Questions";
 import Programs from "./components/Programs/Programs";
 import Footer from "./components/Footer/Footer";
-
+import LocationDisplay from "./components/LocationComponent/LocationComponent";
 // Import data
 import { programs_shopper } from "./constants/programs_shopper";
 
@@ -21,6 +21,7 @@ const App = () => {
       <Navbar hamActive={hamActive} setHamActive={setHamActive} />
       <NavbarResponsive hamActive={hamActive} />
       <Hero />
+      <LocationDisplay></LocationDisplay>
       <Features />
       <Growth />
       <Questions />
