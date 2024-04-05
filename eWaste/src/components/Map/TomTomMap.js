@@ -57,22 +57,48 @@ const TomTomMap = ({ latitude, longitude }) => {
         .addTo(map);
       setUserMarker(userMarker);
 
-      // Add location markers with black color
-      const newLocationMarkers = locations.map((location) => {
+      // Add location markers with black color for e-waste centers
+      const ewasteMarkers = [
+        {
+          name: "E-waste Center 1",
+          coordinates: [longitude + 0.005, latitude - 0.005],
+        },
+        {
+          name: "E-waste Center 2",
+          coordinates: [longitude - 0.003, latitude + 0.006],
+        },
+        {
+          name: "E-waste Center 3",
+          coordinates: [longitude + 0.008, latitude + 0.002],
+        },
+      ];
+
+      const newLocationMarkers = ewasteMarkers.map((ewasteMarker) => {
         const marker = new tt.Marker({
           color: "black",
         })
-          .setLngLat([0, 0]) // Placeholder coordinates
+          .setLngLat(ewasteMarker.coordinates)
           .addTo(map);
 
-        // Create a custom tooltip for each location marker
-        const tooltip = new tt.Popup({ offset: 35 }).setHTML(
-          `<b>${location.ewastecentername}</b>`
-        );
-        marker.setPopup(tooltip);
+        // Create a custom popup for each location marker
+        const popupContent = document.createElement("div");
+        popupContent.innerHTML = `<div style="font-weight: bold; font-size: 16px; padding: 10px;">${ewasteMarker.name}</div>`;
+        const popup = new tt.Popup({
+          offset: 35,
+          closeButton: false,
+        }).setDOMContent(popupContent);
+        marker.setPopup(popup);
+
+        // Add label for each location marker
+        const label = new tt.Marker({
+          element: createLabelElement(ewasteMarker.name),
+        })
+          .setLngLat(ewasteMarker.coordinates)
+          .addTo(map);
 
         return marker;
       });
+
       setLocationMarkers(newLocationMarkers);
 
       map.addControl(new tt.NavigationControl());
@@ -105,38 +131,11 @@ const TomTomMap = ({ latitude, longitude }) => {
     }
   }, [latitude, longitude, userMarker]);
 
-  useEffect(() => {
-    // Update location markers position when locations change
-    if (locationMarkers.length > 0) {
-      locationMarkers.forEach((marker, index) => {
-        const { pincode, city } = locations[index];
-        fetchCoordinates(pincode, city)
-          .then((coordinates) => {
-            if (coordinates) {
-              marker.setLngLat(coordinates);
-            }
-          })
-          .catch((error) => {
-            console.error("Error fetching coordinates:", error);
-          });
-      });
-    }
-  }, [locations, locationMarkers]);
-
-  const fetchCoordinates = async (pincode, city) => {
-    try {
-      const response = await fetch(
-        `https://nominatim.openstreetmap.org/search?city=${city}&postalcode=${pincode}&format=json&limit=1`
-      );
-      const data = await response.json();
-      if (data && data.length > 0) {
-        const { lat, lon } = data[0];
-        return [parseFloat(lon), parseFloat(lat)];
-      }
-    } catch (error) {
-      console.error("Error fetching coordinates:", error);
-    }
-    return null;
+  const createLabelElement = (text) => {
+    const label = document.createElement("div");
+    label.className = "marker-label";
+    label.textContent = text;
+    return label;
   };
 
   return (
