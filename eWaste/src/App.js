@@ -34,12 +34,15 @@ const App = () => {
       <Navbar hamActive={hamActive} setHamActive={setHamActive} />
       <NavbarResponsive hamActive={hamActive} />
       <Hero />
- 
+      <br />
+      <br />
+      <br />
+      <br />
       {latitude && longitude && (
         <TomTomMap latitude={latitude} longitude={longitude} />
       )}
- 
-      <LocationDisplay />
+
+      {/* <LocationDisplay /> */}
       <Features />
       <Growth />
       <Questions />
